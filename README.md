@@ -1,75 +1,86 @@
-=== Conditional Product Discount ===
-Contributors: deepakjangra  
-Tags: woocommerce, discount, product discount, conditional pricing, dynamic pricing  
-Requires at least: 5.6  
-Tested up to: 6.8
-Requires PHP: 7.2  
-Stable tag: 1.0.0  
-License: GPLv2 or later  
-License URI: https://www.gnu.org/licenses/gpl-2.0.html  
+# Conditional Product Discount
 
-Apply automatic discounts to specific WooCommerce products based on total product price (price × quantity). Easy rule management and flexible product targeting.
+**Contributors:** [Deepak Jangra](https://deepslog.com/)  
+**Tags:** woocommerce, discount, product discount, conditional pricing, dynamic pricing  
+**Requires at least:** 5.6  
+**Tested up to:** 6.5  
+**Requires PHP:** 7.2  
+**Stable tag:** 1.0.0  
+**License:** GPLv2 or later  
+**License URI:** https://www.gnu.org/licenses/gpl-2.0.html
 
-== Description ==
+Apply automatic discounts to specific WooCommerce products based on the total product price (price × quantity). Set flexible discount rules for individual products.
 
-**Conditional Product Discount** is a lightweight WooCommerce extension that lets you apply percentage-based discounts on specific products if their total price (price × quantity) exceeds defined thresholds.
+---
 
-Perfect for creating volume-based promotions, bulk discounts, and custom pricing strategies without touching a single line of code.
+## ✨ Features
 
-### 🧠 Features:
+- Set multiple rules based on total product price (product price × quantity)
+- Define specific discounts per product using a multi-select dropdown
+- Apply discounts per product line item—not the whole cart
+- Responsive and clean admin UI
+- Prevent discount abuse with 100% discount cap
+- Built-in rule validation
+- Select2-powered searchable product selection
+- Fully compatible with WooCommerce cart calculations
 
-- Set multiple discount rules based on total product price
-- Apply discounts to individual products, not the entire cart
-- Define rules for specific products using a searchable multi-select
-- Prevent overly generous giveaways with a 100% cap
-- Add and manage rules from a clean, responsive admin panel
-- Select2-powered UI for fast product selection
-- Works seamlessly with WooCommerce carts
+---
 
-### 🛠 Use Case Example:
+## 📦 Use Case Example
 
-- Buy more than ₹800 worth of a product → get 10% off  
-- Over ₹1200 of a product → get 20% off  
-- Over ₹1500 → get 25% off  
+- If a product’s total (price × quantity) exceeds ₹800 → apply 10% discount  
+- If it exceeds ₹1200 → apply 20% discount  
+- If it exceeds ₹1500 → apply 25% discount
 
-All discounts are applied automatically when the product meets the defined threshold.
+These rules are evaluated individually per product—not on the total cart.
 
-== Installation ==
+---
 
-1. Upload the plugin files to the `/wp-content/plugins/conditional-product-discount` directory, or install the plugin through the WordPress admin interface.
-2. Activate the plugin through the 'Plugins' menu in WordPress.
-3. Go to **Product Discounts** in the admin menu to set up your rules.
+## 🛠 Installation
 
-== Frequently Asked Questions ==
+1. Download the plugin ZIP and upload it via **Plugins > Add New** or extract it into your `/wp-content/plugins/` directory.
+2. Activate the plugin through the WordPress **Plugins** menu.
+3. Go to **Product Discounts** in the WordPress admin panel.
+4. Add your rules. Done.
 
-= Does this work with other WooCommerce discount plugins? =  
-It should, but compatibility may vary depending on how other plugins modify cart pricing.
+---
 
-= Can I apply discounts to product categories or tags? =  
-Currently, the plugin supports specific products only. Support for categories and tags is planned.
+## 📸 Screenshots
 
-= Will it apply the highest discount or the first matching rule? =  
-The plugin stops at the first matching rule for each product.
+1. **Admin panel** with custom discount rules.
+2. **WooCommerce cart** showing per-product applied discounts.
 
-== Screenshots ==
+---
 
-1. Admin interface to add and manage discount rules
-2. WooCommerce cart showing applied discounts
+## ❓ FAQ
 
-== Changelog ==
+### Does this work with other discount plugins?
 
-= 1.0.0 =
-* Initial release 🎉
+It should, but results may vary depending on how other plugins apply pricing logic.
 
-== Upgrade Notice ==
+### Can I apply discounts to categories or tags?
 
-= 1.0.0 =
-First release! Set up your conditional product discounts with ease.
+Not yet. Currently, you must select products individually. Category-based rules are on the roadmap.
 
-== Credits ==
+### Will the plugin apply all matching rules?
+
+Nope. The plugin stops at the **first matching rule** for each product. Plan your thresholds accordingly.
+
+---
+
+## 🚀 Changelog
+
+### 1.0.0
+- Initial release with product-based conditional discounts and UI rule manager.
+
+---
+
+## 🧑‍💻 Credits
 
 Developed by [Deepak Jangra](https://deepslog.com/)
 
-== License ==
+---
 
-This plugin is free software, licensed under the GNU General Public License v2 or later.
+## 📜 License
+
+This plugin is free software released under the [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html).
